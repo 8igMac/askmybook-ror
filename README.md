@@ -1,5 +1,17 @@
-# README
+# The Askmybook Challenge by Gumroad
 
+## Usage
+- A script to convert a pdf file to embeddings and save 
+the embeddings in a local file.
+```sh
+make emb
+```
+- Test API.
+```sh
+make api_test
+```
+
+## Others
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
