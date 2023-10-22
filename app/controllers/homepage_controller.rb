@@ -16,7 +16,7 @@ class HomepageController < ApplicationController
     # TODO: Otherwise, load embedding and answer qustion with context.
     docs = "a list of content of each pages"
     doc_embs = "a list of embeddings of content of each page"
-    result = answer_query_with_context(question_asked, docs, doc_embs)
+    result = HomepageHelper.answer_query_with_context(question_asked, docs, doc_embs)
     context = result[:context]
     answer = result[:answer]
 
@@ -35,12 +35,5 @@ class HomepageController < ApplicationController
   # Do the parameter check using Strong Typeing in Rails.
   def ask_params
     params.require(:question)
-  end
-
-  # TODO
-  def answer_query_with_context(question_asked, docs, doc_embs)
-    puts docs
-    puts doc_embs
-    { context: "context", answer: "answer"}
   end
 end
