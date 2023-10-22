@@ -2,7 +2,9 @@ require 'test_helper'
 
 class HomepageHelperTest < ActiveSupport::TestCase
   def test_answer_query_with_context
-    result = HomepageHelper.answer_query_with_context('q', 'doc', 'context')
+    question = 'How many years did the author took for him to realize the consequence behind a "grows at all cost" mindset?'
+
+    result = HomepageHelper.answer_query_with_context(question, 'doc', 'context')
     # puts result[:context]
     puts result[:answer]
   end
