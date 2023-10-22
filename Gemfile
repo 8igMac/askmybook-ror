@@ -73,3 +73,5 @@ end
 gem "pdf-reader", "~> 2.11"
 
 gem "numo-narray", "~> 0.9.2"
+
+gem "http", "~> 5.1"
